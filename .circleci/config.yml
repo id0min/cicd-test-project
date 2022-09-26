@@ -2,13 +2,13 @@ version: 2.1
 setup: true
 orbs:
   continuation: circleci/continuation@0.3.1
-  #circleci-cli: circleci/circleci-cli@0.1.9
+  circleci-cli: circleci/circleci-cli@0.1.9
 
 jobs:
-  #use-executor:
-  #    executor: cli/default
-  #    steps:
-  #      - run: echo "this job is using the orb's default executor"
+  use-executor:
+      executor: cli/default
+      steps:
+        - run: echo "this job is using the orb's default executor"
         
   generate-and-run-circleci:
     docker:
@@ -26,5 +26,5 @@ jobs:
 workflows:
   build:
     jobs:
-      #- use-executor
+      - use-executor
       - generate-and-run-circleci
