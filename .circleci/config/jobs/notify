@@ -1,0 +1,20 @@
+docker:
+  - image: 'cimg/base:stable'
+steps:
+  - slack/notify:
+      custom: |
+        {
+          "blocks": [
+            {
+              "type": "section",
+              "fields": [
+                {
+                  "type": "plain_text",
+                  "text": "*CICD cicd-test-project by GitHub",
+                  "emoji": true
+                }
+              ]
+            }
+          ]
+        }
+      event: always
