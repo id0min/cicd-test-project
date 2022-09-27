@@ -10,7 +10,7 @@ steps:
               "fields": [
                 {
                   "type": "plain_text",
-                  "text": ${CICD_MESSAGE_2},
+                  "text": ${CICD_MSG_2},
                   "emoji": true
                 }
               ]
