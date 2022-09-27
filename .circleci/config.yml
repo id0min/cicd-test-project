@@ -8,7 +8,7 @@ jobs:
   use-executor:
       executor: circleci-cli/default
       steps:
-        - run: echo $CICD_MESSAGE_1
+        - run: echo ${CICD_MESSAGE_1}
         
   generate-and-run-circleci:
     docker:
