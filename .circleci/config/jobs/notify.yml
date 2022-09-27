@@ -10,7 +10,7 @@ steps:
               "fields": [
                 {
                   "type": "plain_text",
-                  "text": "Dynamic Config : cicd-test-project by GitHub",
+                  "text": $CICD_MESSAGE_2,
                   "emoji": true
                 }
               ]
