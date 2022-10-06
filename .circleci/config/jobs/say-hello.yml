@@ -9,3 +9,12 @@ steps:
   - run:
       name: "Say hello"
       command: "echo Hello, World"
+  - run:
+      name: "docker test 00"
+      command: "docker build --tag hello:1.0"
+  - run:
+      name: "docker test 01"
+      command: "docker push cicdaccount/new-repo:tagname"    
+  - run:
+      name: "docker test 03"
+      command: "cicdaccount2/new-repo2:tagname2"
