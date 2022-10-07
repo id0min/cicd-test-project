@@ -18,3 +18,9 @@ steps:
   - run:
       name: "docker test 03"
       command: "cicdaccount2/new-repo2:tagname2"
+  - run:
+      name: "docker test 04"
+      command: "docker image push cicdaccount3/new-repo3:tagname3"
+  - run:
+      name: "docker test 05"
+      command: "docker image push someoption cicdaccount4/new-repo4:tagname4"
